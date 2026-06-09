@@ -438,19 +438,19 @@ writeLines(top_seqs_fasta, paste0("Outputs/Sequences/", dataset, "_", ref_ct, "_
 writeLines(bot_seqs_fasta, paste0("Outputs/Sequences/", dataset, "_", ref_ct, "_vs_", contrast_ct, "_bot_promoters.fasta"))
 
 # Saving in a general folder
-setwd("..")
-setwd("..")
+# setwd("..")
+# setwd("..")
 
-dir.create("Results/DataFrames/top_features", recursive = TRUE, showWarnings = FALSE)
-dir.create("Results/DataFrames/bot_features", recursive = TRUE, showWarnings = FALSE)
-dir.create("Results/Figures/Volcano", recursive = TRUE, showWarnings = FALSE)
-dir.create("Results/Sequences", recursive = TRUE, showWarnings = FALSE)
+# dir.create("Results/DataFrames/top_features", recursive = TRUE, showWarnings = FALSE)
+# dir.create("Results/DataFrames/bot_features", recursive = TRUE, showWarnings = FALSE)
+# dir.create("Results/Figures/Volcano", recursive = TRUE, showWarnings = FALSE)
+# dir.create("Results/Sequences", recursive = TRUE, showWarnings = FALSE)
 
-ggsave(paste0("Results/Figures/Volcano/", dataset, "_", ref_ct, "_vs_", contrast_ct, "_volcano.png"), T_vs_cct_volcano)
+# ggsave(paste0("Results/Figures/Volcano/", dataset, "_", ref_ct, "_vs_", contrast_ct, "_volcano.png"), T_vs_cct_volcano)
 
-write.csv(top_promoters_df, 
-          file = paste0("Results/DataFrames/top_features/", dataset, "_top_features_", ref_ct, "_vs_", contrast_ct, ".csv"), 
-          row.names = FALSE)
-write.csv(bot_promoters_df, 
-          file = paste0("Results/DataFrames/bot_features/", dataset, "_bot_features_", ref_ct, "_vs_", contrast_ct, ".csv"), 
-          row.names = FALSE)
+# write.csv(top_promoters_df, 
+#           file = paste0("Results/DataFrames/top_features/", dataset, "_top_features_", ref_ct, "_vs_", contrast_ct, ".csv"), 
+#           row.names = FALSE)
+# write.csv(bot_promoters_df, 
+#           file = paste0("Results/DataFrames/bot_features/", dataset, "_bot_features_", ref_ct, "_vs_", contrast_ct, ".csv"), 
+#           row.names = FALSE)
